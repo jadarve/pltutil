@@ -1,0 +1,7 @@
+{
+	"class" : "COLOR_WHEEL",
+	"pos" : [0, 0],
+	"span" : [1, 1],
+	"maxflow" : 1.0,
+	"ticks" : true
+}

@@ -1,0 +1,8 @@
+{
+	"class" : "IMAGE",
+	"pos" : [0, 0],
+	"span" : [1, 1],
+	"title" : "image",
+	"data" : null,
+	"cmap" : "jet"
+}

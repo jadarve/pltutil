@@ -1,0 +1,21 @@
+{
+	"class" : "MULTI1D",
+	"pos" : [0, 0],
+	"span" : [1, 1],
+	"title" : "multi 1D",
+	"x_label" : null,
+	"y_label" : null,
+	"axis" : true,
+	"min" : 0,
+	"max" : 1,
+	"line_width" : 1,
+	
+	"marker" : false,
+	"marker_index" : 0,
+	"marker_color": "r",
+	"marker_size" : 30,
+	
+	"X" : null,
+	"series" : {
+	}
+}

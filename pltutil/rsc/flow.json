@@ -1,0 +1,9 @@
+{
+	"class" : "FLOW",
+	"pos" : [0, 0],
+	"span" : [1, 1],
+	"title" : "flow",
+	"axis" : false,
+	"max" : 3.0,
+	"data" : null
+}

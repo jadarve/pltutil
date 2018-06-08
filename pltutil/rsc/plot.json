@@ -1,0 +1,10 @@
+{
+	"width" : 20,
+	"height" : 10,
+	"rows" : 1,
+	"columns" : 1,
+	"tight" : true,
+	"suptitle" : null,
+	"plots" : {
+	}
+}
