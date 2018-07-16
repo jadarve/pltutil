@@ -17,6 +17,7 @@ import numpy as np
 
 import matplotlib.pyplot as plt
 import matplotlib.ticker as plticker
+import matplotlib.patches as patches
 from mpl_toolkits.axes_grid1 import make_axes_locatable
 from matplotlib.gridspec import GridSpec
 
@@ -336,6 +337,18 @@ def plotImage(axis, desc):
         cax = divider.append_axes('right', size=desc['divider'], pad=0.05)
         cax.axis('off')
 
+    if 'boxes' in desc.keys():
+
+        boxes     = desc['boxes']
+        color     = 'red' if 'boxes_color' not in desc.keys() else desc['boxes_color']
+        linewidth = 2 if 'boxes_linewidth' not in desc.keys() else desc['boxes_linewidth']
+
+        K = boxes.shape[0]
+        for k in range(K):
+            x, y, w, h = boxes[k, :4]
+            rect = patches.Rectangle((x,y), w, h, fill=False, color=color, linewidth=linewidth)
+            axis.add_patch(rect)
+
 
 def plotScalarField(axis, desc):
 
@@ -371,6 +384,18 @@ def plotScalarField(axis, desc):
         divider = make_axes_locatable(axis)
         cax = divider.append_axes('right', size=desc['divider'], pad=0.05)
         cax.axis('off')
+
+    if 'boxes' in desc.keys():
+
+        boxes     = desc['boxes']
+        color     = 'red' if 'boxes_color' not in desc.keys() else desc['boxes_color']
+        linewidth = 2 if 'boxes_linewidth' not in desc.keys() else desc['boxes_linewidth']
+
+        K = boxes.shape[0]
+        for k in range(K):
+            x, y, w, h = boxes[k, :4]
+            rect = patches.Rectangle((x,y), w, h, fill=False, color=color, linewidth=linewidth)
+            axis.add_patch(rect)
         
 
 def plot1D(axis, desc):
